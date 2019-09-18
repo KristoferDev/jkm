@@ -1,0 +1,80 @@
+nav {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  .logo,
+  .contact {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .logo {
+    float: left;
+  }
+
+  .contact {
+    float: right;
+  }
+
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    max-width: 350px;
+
+    li.dropdown {
+      display: inline-block;
+    }
+
+    li {
+      float: left;
+
+      a,
+      .drop-btn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 24px;
+
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+
+    .dropdown {
+      &:hover .drop-btn {
+        background-color: red;
+      }
+
+      &:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+        a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+
+          &:hover {
+            color: #fff;
+            background-color: red;
+          }
+        }
+      }
+    }
+  }
+}
