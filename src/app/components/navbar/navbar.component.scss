@@ -1,3 +1,5 @@
+// Create color theme
+
 nav {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
@@ -40,14 +42,14 @@ nav {
         font-size: 24px;
 
         &:hover {
-          background-color: red;
+          background-color: #23b8ba;
         }
       }
     }
 
     .dropdown {
       &:hover .drop-btn {
-        background-color: red;
+        background-color: #23b8ba;
       }
 
       &:hover .dropdown-content {
@@ -71,7 +73,7 @@ nav {
 
           &:hover {
             color: #fff;
-            background-color: red;
+            background-color: #23b8ba;
           }
         }
       }

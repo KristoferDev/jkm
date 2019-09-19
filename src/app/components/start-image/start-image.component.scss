@@ -1,0 +1,26 @@
+.large-image {
+   img {
+      width: calc(100vw);
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -100;
+   }
+
+   .content {
+      .wrapper {
+         margin: 0 auto;
+         margin-top: 10%;
+         padding: 25px;
+         border-radius: 5px;
+         //background-color: rgba(0, 0, 0, 0.6);
+         color: #FFF;
+         max-width: 500px;
+
+         h1,
+         p {
+            margin: 0;
+         }
+      }
+   }
+}
