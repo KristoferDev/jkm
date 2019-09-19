@@ -9,6 +9,7 @@ import { FoodComponent } from './components/food/food.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { StartImageComponent } from './components/start-image/start-image.component';
+import { TextImageComponent } from './components/text-image/text-image.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,11 @@ import { StartImageComponent } from './components/start-image/start-image.compon
     FoodComponent,
     AboutComponent,
     HomeComponent,
-    StartImageComponent
+    StartImageComponent,
+    TextImageComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
