@@ -1,3 +1,4 @@
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './start-image.component.html',
   styleUrls: ['./start-image.component.scss']
 })
+@NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+})
 export class StartImageComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
